@@ -3,25 +3,28 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    <link href= "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"rel="stylesheet">
+    <link href= "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlogSite</title>
+    <title>Homemade Heaven</title>
 </head>
 <body>
     <header>
         <!-- this is the content of the header -->
-         <h1 id="logo">BrightBlog</h1>
+         <h1 id="logo">Homemade Heaven</h1>
          <nav>
             <ul id="nav-ul">
                 <li>
                     <a href=""class="navbutton">Home page</a>
                 </li>
                 <li>
-                     <a href=""class="navbutton">About Us</a>
+                     <a href=""class="navbutton">Recipes</a>
                 </li>
                 <li>
-                    <a href=""class="navbutton">Contact Us</a>
+                    <a href=""class="navbutton">Ingredients</a>
+                </li>
+                <li>
+                    <a href=""class="navbutton">About Us</a>
                 </li>
             </ul>
          </nav>
@@ -30,23 +33,35 @@
         <div id="main-content">
             <aside>
                 <section>
-                    <h4> Filter by month </h4>
+                    <h4> Filter by Region </h4>
                         <nav>
                             <ul>
-                                <li><a href=""></a>Filter for January</li>
-                                <li><a href=""></a>Filter for Febuary</li>
-                                <li><a href=""></a>Filter for March</li>
+                                <li><a href="">British & Irish</a></li>
+                                <li><a href="">Mediterranean</a></li>
+                                <li><a href="">Eastern European</a></li>
+                                <li><a href="">Middle Eastern</a></li>
+                                <li><a href="">North American</a></li>
+                                <li><a href="">South American</a></li>
+                                <li><a href="">Caribbean</a></li>
+                                <li><a href="">East Asian</a></li>
+                                <li><a href="">South Asian</a></li>
+                                <li><a href="">South East Asian</a></li>
+                                <li><a href="">Polynesian</a></li>
+                                <li><a href="">African</a></li>
                             </ul>
                         </nav>
                 </section>
                 <section>
-                    <h2>Filter by category</h2>
+                    <h4>Filter by ingredient</h4>
                     <nav>
                         <ul>
-                            <li><a href="">Puppies</a></li>
-                            <li><a href="">Dogs</a></li>
-                            <li><a href="">Cats</a></li>
-                            <li><a href="">hedgehog</a></li>
+                            <li><a href="">Poultry</a></li>
+                            <li><a href="">Fish & seafood</a></li>
+                            <li><a href="">Red meat</a></li>
+                            <li><a href="">Vegetables</a></li>
+                            <li><a href="">Pasta</a></li>
+                            <li><a href="">Gluten-free</a></li>
+                            <li><a href="">Vegan</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -54,17 +69,40 @@
             <div>
                 <article> 
                     <header>
-                      <!-- Artcles header goes here -->
-                      <h2>Ten amusing facts about dogs</h2>
-                      <h3> Read time: 5 minutes</h3>
+                      <h1>Homemade Basil Pesto</h1>
+                      <img src="pesto.jpg" alt="Jar of Pesto" width="300" height="200">
+                      <h4> Cook time: 15 minutes</h4>
+                      <h4> Level: Easy</h4>
+                      <h4> Makes: 125g </h4>
                     </header> 
                     <main>
-                      <p></p>
+                        <div class="ingredients-section">
+                            <h3> Ingredients </h3>
+                            <ul> 
+                                <li>80g Basil</li> 
+                                <li>50g Grated parmesan</li>
+                                <li>150ml Olive oil</li>
+                                <li>2 crushed garlic cloves</li>
+                                <li>50g Ground almonds</li>
+                                <li>Juice of 1 lemon</li>
+                                <li>Salt & pepper</li>
+                            </ul>
+                        </div>
+
+                        <div class="method-section">
+                            <h3> Method </h3>
+                            <ul>
+                                <h4> Step One </h4>
+                                <li> Blend the basil in a food processor. Then add the parmesan and ground almonds.</li>
+                                <h4> Step Two</h4>
+                                <li> Slowly add the olive oil whilst continuing to blend in intervals. Do the same with the lemon juice, adding a little bit at a time to suit your taste.</li>
+                                <h4> Step Three</h4>
+                            <li> Once it starts to form a paste consistency, add the garlic and season to taste.</li>
+                        </ul>
+                    </div>
                     </main> 
                     <footer>
-                      <h2>Author: Charlotte Greenwood</h2>
-                      <img src="https://placebear.com/100/100" alt="A profile of a bear">
-                      <h3>Last Posted: 01-08-2024</h3>
+                      <h4> Recipe from Homemade Heaven, September 2024</h4>
                     </footer>
                   </article>
             </div>
@@ -73,8 +111,9 @@
         </div>
         
 
-        <hr>    
-        <h2>Sign up for our newsletter!</h2>
+        <hr>
+        
+        <h2>Sign up to our newsletter!</h2>
         <form action="" method="">
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" required>
@@ -88,34 +127,8 @@
             <input type="email" name="email" id="email">
             <br>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <br>
-
-            <label for="favourite_animal">Favourite Animal:</label>
-            <input type="radio" name="favourite_animal" id="dog" value="dog">
-            <label for="dog">Dog</label>
-            <input type="radio" name="favourite_animal" id="cat" value="cat">
-            <label for="cat">Cat</label>
-            <input type="radio" name="favourite_animal" id="hedgehog" value="hedgehog">
-            <label for="hedgehog">Hedgehog</label>
-            <br>
-
-            <label for="country">Country</label>
-            <select name="name" id="country">
-                <option value="england">England</option>
-                <option value="wales">Wales</option>
-                <option value="scotland">Scotland</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select>
-            <br>
-
-            <label for="bio">Biography</label>
-            <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
-            <br>
-
             <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to out newsletter!</label>
+            <label for="subscribe">I want to recieve all the newest recipes!</label>
             <br>
 
             <input type="submit" value="Send!">
@@ -125,15 +138,13 @@
     </main>
 
     <footer>
-       <h2>BrightBlogSite</h2> 
        <section>
         <nav>
             <ul id="footer-ul">
                 <div>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">contact</a></li>
-                    <li><a href="">careers</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </div>
                 <div>
                     <li><a href="">Privacy Policy</a></li>
@@ -142,6 +153,7 @@
                 </div>
             </ul>
         </nav>
+        <h3> &copy; Homemade Heaven Ltd.2024</h3>
        </section>
     </footer>
 </body>
